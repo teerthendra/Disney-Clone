@@ -32,8 +32,8 @@ const elementRef=useRef();
 
   return (
    <div >
-    <HiChevronLeft className="text-white text-[30px] absolute mx-8 mt-[150px] cursor-pointer left-0 bg-transparent " onClick={()=>sliderLeft(elementRef.current)}/>
-    <HiChevronRight className="text-white text-[30px] absolute mx-8 mt-[150px] cursor-pointer right-0 bg-transparent overflow-y-scroll" onClick={()=>sliderRight(elementRef.current)}/>
+    <HiChevronLeft className="text-white text-[30px] absolute mx-8 mt-[150px] cursor-pointer left-0 bg-transparent hide-on-mobile" onClick={()=>sliderLeft(elementRef.current)}/>
+    <HiChevronRight className="text-white text-[30px] absolute mx-8 mt-[150px] cursor-pointer right-0 bg-transparent overflow-y-scroll hide-on-mobile" onClick={()=>sliderRight(elementRef.current)}/>
    
     <div className='flex overflow-x-auto w-full px-16 py-4 scrollbar-hide scroll-smooth' ref={elementRef} >
       {movieList.map((item,index)=>(
